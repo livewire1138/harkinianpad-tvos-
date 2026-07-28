@@ -95,6 +95,11 @@ signing, installation, controller, and package-audit workflow.
 [`docs/INSTALL_IPA.md`](docs/INSTALL_IPA.md) is the short AltStore Classic
 installation guide for the downloadable developer preview.
 
+The Apple TV port is currently research only. See the
+[`tvOS platform research and port plan`](docs/tvos-port-research.md) for the
+file-ingest, controller/focus, lifecycle, build, and validation differences
+from this iOS/iPadOS implementation.
+
 Before publishing or sharing a build, follow the
 [`release checklist`](docs/RELEASE_CHECKLIST.md).
 
