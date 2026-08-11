@@ -282,6 +282,13 @@ single top-level project license, so do not describe the project as broadly
 redistributable open source without resolving that boundary.
 </details>
 
+## Experimental tvOS port
+
+A compile-first Apple TV target is now available as an early engineering
+preview. It is controller-first and intentionally does not yet claim a solved
+game-data import flow. See [`docs/TVOS.md`](docs/TVOS.md) for build commands,
+current limitations, and the physical-device acceptance sequence.
+
 ## Project map
 
 | Path | Purpose |

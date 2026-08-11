@@ -1,0 +1,20 @@
+--- a/ZAPD/CMakeLists.txt
++++ b/ZAPD/CMakeLists.txt
+@@ -375,7 +375,7 @@
+        -pthread
+    )
+
+-    if (CMAKE_SYSTEM_NAME MATCHES "Darwin|iOS")
++    if (CMAKE_SYSTEM_NAME MATCHES "Darwin|iOS|tvOS")
+         target_link_options(${PROJECT_NAME} PUBLIC
+             -pthread
+         )
+@@ -404,7 +404,7 @@
+        storm
+        PNG::PNG
+     )
+-elseif(CMAKE_SYSTEM_NAME MATCHES "Darwin|iOS")
++elseif(CMAKE_SYSTEM_NAME MATCHES "Darwin|iOS|tvOS")
+    set(THREADS_PREFER_PTHREAD_FLAG ON)
+    find_package(Threads REQUIRED)
+    set(ADDITIONAL_LIBRARY_DEPENDENCIES

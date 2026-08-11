@@ -62,3 +62,10 @@ mkdir -p "$APP_ICON_DESTINATION"
 cp "$APP_ICON_SOURCE/Contents.json" "$APP_ICON_DESTINATION/Contents.json"
 cp "$APP_ICON_SOURCE/AppIcon.png" "$APP_ICON_DESTINATION/AppIcon.png"
 echo "Installed HarkinianPad app icon assets"
+
+# Extend the proven iOS integration to Apple's controller-first tvOS platform.
+apply_patch "$SHIPWRIGHT/libultraship" \
+    "$ROOT/patches/libultraship-tvos.patch" ignore-space-change
+apply_patch "$SHIPWRIGHT/ZAPDTR" "$ROOT/patches/zapdtr-tvos.patch" \
+    ignore-space-change
+apply_patch "$SHIPWRIGHT" "$ROOT/patches/shipwright-tvos.patch" ignore-space-change
